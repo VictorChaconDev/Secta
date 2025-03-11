@@ -11,7 +11,7 @@ class Product {
     displayResolution,
     battery,
     primaryCamera,
-    secondaryCmera,
+    secondaryCamera,
     dimentions,
     weight,
     options,
@@ -27,34 +27,31 @@ class Product {
     this.displayResolution = displayResolution;
     this.battery = battery;
     this.primaryCamera = primaryCamera;
-    this.secondaryCmera = secondaryCmera;
-    this.dimensions = dimentions;
+    this.secondaryCamera = secondaryCamera;
+    this.dimentions = dimentions;
     this.weight = weight || "No disponible";
     this.options = options;
   }
 
-  static fromApiResponse(data) {
-    {
-      return new Product({
-        id: data.id,
-        brand: data.brand,
-        model: data.model,
-        price: data.price,
-        imgUrl: data.imgUrl,
-        cpu: data.cpu,
-        ram: data.ram,
-        os: data.os,
-        displayResolution: data.displayResolution,
-        battery: data.battery,
-        cameras: [
-          data.primaryCamera,
-          Array.isArray(data.secondaryCmera) ? data.secondaryCmera.join(", ") : data.secondaryCmera || "No disponible"
-        ].filter(Boolean).join(" / "),
-        dimentions: data.dimentions,
-        weight: data.weight,
-        options: data.options,
-      });
-    }
+static fromApiResponse(data) {
+    console.log(data)
+  return new Product({
+    id: data.id,
+    brand: data.brand,
+    model: data.model,
+    price: data.price,
+    imgUrl: data.imgUrl,
+    cpu: data.cpu,
+    ram: data.ram,
+    os: data.os,
+    displayResolution: data.displayResolution,
+    battery: data.battery,
+    primaryCamera: Array.isArray(data.primaryCamera) ? data.primaryCamera.join(", ") : data.primaryCamera || "No disponible",
+    secondaryCamera: Array.isArray(data.secondaryCmera) ? data.secondaryCmera.join(", ") : data.secondaryCmera || "No disponible",
+    dimentions: data.dimentions,
+    weight: data.weight || "No disponible",
+    options: data.options,
+  });
   }
 }
 

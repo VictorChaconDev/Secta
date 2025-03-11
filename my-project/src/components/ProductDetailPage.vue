@@ -13,8 +13,9 @@
         <p><strong>Sistema Operativo:</strong> {{ product.os }}</p>
         <p><strong>Resolución:</strong> {{ product.displayResolution }}</p>
         <p><strong>Batería:</strong> {{ product.battery }}</p>
-        <p><strong>Cámara:</strong> {{ product.cameras }}</p>
-        <p><strong>Dimensiones:</strong> {{ product.dimensions }}</p>
+        <p><strong>Cámara Principal:</strong> {{ product.primaryCamera }}</p>
+        <p><strong>Cámara Secundaria:</strong> {{ product.secondaryCamera }}</p>
+        <p><strong>Dimensiones:</strong> {{ product.dimentions }}</p>
         <p><strong>Peso:</strong> {{ product.weight }}g</p>
 
         <div class="mt-4">
