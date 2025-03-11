@@ -23,25 +23,33 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue';
-import axios from 'axios';
+import { ref, computed, onMounted } from "vue";
+import axios from "axios";
 import Product from "../models/Product.js";
+import { saveToCache, loadFromCache } from "../utils/cache";
 
 const products = ref([]);
 const search = ref("");
 
 const filteredProducts = computed(() => {
   return products.value.filter(product =>
-    `${product.brand} ${product.model}`.toLowerCase().includes(search.value)
+    `${product.brand} ${product.model}`.toLowerCase().includes(search.value.toLowerCase())
   );
 });
 
 onMounted(async () => {
-  try {
-    const response = await axios.get("https://itx-frontend-test.onrender.com/api/product");
-    products.value = response.data.map(Product.fromApiResponse);
-  } catch (error) {
-    console.error("Error fetching products:", error);
+  const cachedProducts = loadFromCache("products");
+  if (cachedProducts) {
+    products.value = cachedProducts.map(Product.fromApiResponse);
+  } else {
+    try {
+      const response = await axios.get("https://itx-frontend-test.onrender.com/api/product");
+      products.value = response.data.map(Product.fromApiResponse);
+      saveToCache("products", response.data);
+    } catch (error) {
+      console.error("Error fetching products:", error);
+    }
   }
 });
 </script>
+

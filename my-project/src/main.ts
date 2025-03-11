@@ -3,11 +3,12 @@ import "./style.css";
 import App from "./App.vue";
 import "./index.css";
 import router from "./router";
-import './styles/fonts.css';
 import './index.css';
+import { createPinia } from "pinia";
 
 
 const app = createApp(App);
 app.use(router);
+app.use(createPinia());
 
 app.mount("#app");
