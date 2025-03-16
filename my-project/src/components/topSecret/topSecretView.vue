@@ -1,6 +1,6 @@
 <template>
   <body class="h-screen">
-    <div class="min-h-screen flex flex-col items-center justify-center">
+    <div v-if="!showVideo" class="min-h-screen flex flex-col items-center justify-center">
     <div class="w-full max-w-md p-8 rounded-lg shadow-lg">
       <h1 v-if="!accessGranted" class="text-4xl font-bold text-center mb-6 text-red-600">🔒 Accés restringit</h1>
 
@@ -36,21 +36,22 @@
         </div>
       </transition>
 
-      <div v-if="showVideo" class="text-center" key="video">
-        <h2 class="text-xl font-bold text-white">VIDEO MOSTRANTSE</h2>
-<!--          <video-->
-<!--            ref="videoPlayer"-->
-<!--            controls-->
-<!--            class="w-full rounded-lg shadow-md"-->
-<!--            @contextmenu.prevent-->
-<!--          >-->
-<!--            <source src="/ruta/al/video.mp4" type="video/mp4">-->
-<!--            Tu navegador no soporta la reproducción de video.-->
-<!--          </video>-->
-        </div>
+
 
     </div>
+
   </div>
+  <div v-if="showVideo" class="h-fit" key="video">
+          <video
+            ref="videoPlayer"
+            class="w-full h-full"
+            @click="playVideo"
+            @contextmenu.prevent
+          >
+            <source src="../../assets/videos/cortoVideo.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+          </video>
+      </div>
   </body>
 </template>
 
@@ -85,6 +86,16 @@ const checkPassword = () => {
     error.value = 'Contrasenya incorrecta. Intenta-ho de nou.';
     password.value = '';
   }
+};
+
+const playVideo = () => {
+  //const video = this.$refs.videoPlayer;
+
+  // if(video.paused){
+  //   video.play();
+  // } else {
+  //   video.pause();
+  // }
 };
 
 </script>
