@@ -1,6 +1,6 @@
 <template>
     <div class="p-4 h-screen w-4/5 mx-auto">
-      <h1 class="text-2xl text-blue-700 text-center mb-14 font-bold">PISTA 1</h1>
+      <h1 class="text-3xl text-blue-700 text-center mb-14 font-bold">PISTA 1</h1>
       <swiper
         :modules="[Navigation, EffectCoverflow]"
         :effect="'coverflow'"
@@ -17,7 +17,6 @@
         :navigation="true"
         :grabCursor="true"
         :loop="true"
-        :initialSlides="2"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
         class="relative h-4/6"
@@ -32,11 +31,11 @@
           <img src="../../assets/img/investigacio/captura3eco.jpg" alt="Captura 1 ECO" class="w-full h-full object-contain">
         </swiper-slide>
       </swiper>
-      <p class="text-white text-center mt-14 text-2xl">He revisat totes les publicacions del insta de ECO i a totes hi ha la frase de "<span class="text-red-700">A coelo usque
+      <p style="font-family: 'Roboto Mono'" class="text-white text-center mt-14 text-2xl">He revisat totes les publicacions del insta de ECO i a totes hi ha la frase de "<span class="text-red-700">A coelo usque
         ad centrum</span>". Serà el seu lema? Com un slogan? He pogut traduir-ho del llatí i la traducció exacta és: " <span class="text-red-700">Des del cel al centre de la terra</span>".</p>
   </div>
     <div class="h-screen w-screen p-4 flex flex-col">
-  <h1 class="text-2xl text-blue-700 font-bold text-center mb-4">PISTA 2</h1>
+  <h1 class="text-3xl text-blue-700 font-bold text-center mb-4">PISTA 2</h1>
   <div class="flex-1 flex justify-center items-center w-full gap-4">
     <img src="../../assets/img/investigacio/libroPortada.jpg"
          alt="Portada llibre Gran Doctor, El secret de l'ecologia i la fi del mon pur."
@@ -51,14 +50,18 @@
 
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import { EffectCoverflow, Navigation} from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
-  import 'swiper/css/pagination';
 
 const onSwiper = (swiper) => {
   console.log(swiper);
+
+  // Espera un moment perquè loop faci la seva feina i després ves a la slide que vulguis
+  setTimeout(() => {
+    swiper.slideToLoop(1, 0); // Ves a la slide index 1 (la 2a), sense animació (duració 0)
+  }, 100);
 };
 const onSlideChange = () => {
   console.log('slide change');
