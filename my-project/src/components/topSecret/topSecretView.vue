@@ -153,10 +153,6 @@ const scrollToBottom = () => {
 </script>
 
 <style>
-  body{
-    overflow-y: hidden;
-  }
-
   @keyframes float {
         0%, 100% {
             transform: translateY(0);

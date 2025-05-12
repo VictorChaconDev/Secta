@@ -3,6 +3,8 @@ import MainView from "../components/main/MainView.vue";
 import PerfilsView from "../components/perfils/perfilsView.vue";
 import ReclutatsView from "../components/perfils/reclutatsView.vue";
 import TopSecretView from "../components/topSecret/topSecretView.vue";
+import InvestigacioView from "../components/investigacio/investigacioView.vue";
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -22,8 +24,20 @@ const router = createRouter({
     path: "/top-secret",
       name: "Top Secret",
       component: TopSecretView
+    },{
+    path: "/investigacio",
+      name: "Investigacio",
+      component: InvestigacioView
     }
   ],
+});
+
+router.afterEach((to) => {
+  if (to.path === "/top-secret") {
+    document.body.style.overflowY = "hidden";
+  } else {
+    document.body.style.overflowY = "auto";
+  }
 });
 
 export default router;
