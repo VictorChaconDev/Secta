@@ -59,14 +59,102 @@
          alt="Bloc de notas PISTA 4"
          class="w-2/5 max-h-[90vh] object-contain">
     <img src="../../assets/img/investigacio/noticiaPista4.png"
-         alt="Bloc de notes en blanc"
-         class="w-2/5 max-h-[70vh] object-contain">
+         alt="Noticia pista 4"
+         class="w-2/5 max-h-[80vh] object-contain">
     </div>
   </div>
 <!--  PISTA 5-->
 <div class="h-screen w-screen p-4 flex flex-col">
 <!-- FALTA VIDEO CAMARA OCULTA-->
 </div>
+<!--  AQUI QUIZZ JOC D'OPCIONS TIPO TEST, PER DESBLOQUEJAR SEGÜENT TRAM-->
+  <!--  PISTA 6-->
+<div class="h-screen w-screen p-4 flex flex-col">
+<!-- FALTA VIDEO VLOG 2 amigo de raquel pa sacar info-->
+</div>
+  <!-- PISTA 7 -->
+<div class="h-screen w-screen p-4 flex flex-col overflow-auto">
+  <h1 style="font-family: 'Roboto Mono'" class="text-3xl text-blue-700 text-center mt-7 font-bold">
+    PISTA 7
+  </h1>
+  <div class="flex-1 flex flex-col md:flex-row justify-center items-center w-full gap-4 mt-6 px-2">
+    <img src="../../assets/img/investigacio/informePista7.png"
+         alt="Informe pista 7"
+         class="w-full md:w-2/5 max-h-[80vh] object-contain">
+
+    <p style="font-family: 'Roboto Mono'"
+       class="text-white text-center md:text-center text-lg md:text-lg w-full md:w-5/12 px-4">
+      No puc dir com ho he aconseguit, però he posat les mans en uns informes disciplinaris del professorat de la UAB… d’aquells anys foscos de la dictadura franquista.
+      I deixa’m dir-te que això ho canvia tot.
+      <br><br>
+      Resulta que el misteriós <span class="text-red-700">Gran Doctor</span> és, en realitat, <span class="text-red-700">Robert Marçal</span>. Un professor que va ser expulsat
+      de la universitat. Segons els informes, en Marçal es va plantar contra el règim. Defensava creences que, en aquella època, eren un veritable escàndol. Oblida’t del Déu cristià
+      de sempre; ell parlava d’una altra cosa. Una idea molt diferent: la veneració d’una <span class="text-red-700">Mare Terra</span>.
+      <br><br>
+      I això no és tot. Aquest concepte està molt lligat a la filosofia <span class="text-red-700">d’ECO</span>. Les seves arrels venen directament de les idees d’en Marçal. He
+      seguit llegint articles i resulta que els seus alumnes es referien a ell com <br><span class="text-red-700">“El gran Doctor”</span>.
+      Crec que ell va <span class="text-red-700">fundar ECO</span> als anys 70.
+      <br><br>
+      <span class="text-blue-700">Però, què va passar després? Com es va convertir tot això en aquesta secta?</span>
+      <br><br>
+      Encara em falten peces del trencaclosques, però cada vegada estic més a prop...
+    </p>
+  </div>
+</div>
+  <!--  PISTA 8-->
+<div class="h-screen w-screen p-4 flex flex-col">
+<!-- FALTA VIDEO VLOG 3-->
+</div>
+  <!-- PISTA 9 -->
+<div class="h-screen w-screen p-4 flex flex-col overflow-auto">
+  <h1 style="font-family: 'Roboto Mono'" class="text-3xl text-blue-700 text-center mt-7 font-bold">
+    PISTA 9
+  </h1>
+  <div class="flex-1 flex flex-col md:flex-row justify-center items-center w-full gap-4 mt-6 px-2">
+    <p style="font-family: 'Roboto Mono'"
+       class="text-white text-center md:text-center text-lg md:text-lg w-full md:w-5/12 px-4">
+      He estat investigant més sobre <span class="text-red-700">Robert Marçal</span>, aquest tal
+      <span class="text-red-700">Gran Doctor</span>, però, sincerament, és com intentar encaixar un trencaclosques amb peces que falten.
+      No hi ha gaire informació clara sobre ell.
+      <br><br>
+      Tot i això, he trobat un article. Està escrit per un antic estudiant seu, algú que defensava que l’haurien d’haver <span class="text-red-700">readmès</span>
+      a la UAB. Segons aquest testimoni,
+      en Marçal era un professor vocacional, d’aquells que viuen per ensenyar. La gent que el coneixia l’admirava molt. Però ja sabem com va acabar.
+      <br><br>
+      El van acomiadar. Les seves idees anaven en contra del règim franquista. No va ser per la seva manera d’ensenyar, sinó perquè es <span class="text-red-700">negava a seguir les normes
+      del sistema.</span>
+      Però aquí ve la part estranya: després del seu acomiadament, Marçal desapareix completament. Puf. Ni rastre. Ningú sap què li va passar. És com si el tio s’hagués
+      <span class="text-red-700">esfumat del món.</span>
+    </p>
+    <img src="../../assets/img/investigacio/pista9.png"
+         alt="Pista 9"
+         class="w-full md:w-2/5 max-h-[80vh] object-contain">
+  </div>
+</div>
+    <!--  PISTA 10-->
+<div class="h-screen w-screen p-4 flex flex-col">
+<!-- FALTAN FOTOS PISTA 10-->
+</div>
+     <!--  PISTA 11-->
+<div class="h-screen w-screen p-4 flex flex-col">
+<!-- FALTA VLOG 4: LLIBRE GRAN DOCTOR-->
+</div>
+     <!--  PISTA 12-->
+<div class="h-screen w-screen p-4 flex flex-col">
+<!-- FALTA VLOG 5: BIOGRAFIA JAUME MARTÍ-->
+</div>
+<div class="h-screen w-screen p-4 flex flex-col overflow-auto items-center justify-center relative">
+  <h1 style="font-family: 'Roboto Mono'" class="text-3xl text-blue-700 text-center font-bold absolute top-12">
+    PISTA 12
+  </h1>
+
+  <div class="flex-1 flex flex-col md:flex-row justify-center items-center w-full gap-4 px-2">
+    <img src="../../assets/img/investigacio/pista12.png"
+         alt="Pista 9"
+         class="h-[65vh] w-auto max-w-full object-contain">
+  </div>
+</div>
+<!--  FALTAN BLOGS-->
 </template>
 
 <script setup lang="ts">
