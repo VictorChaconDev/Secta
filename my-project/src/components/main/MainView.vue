@@ -16,7 +16,7 @@
           src="../../assets/img/homepage/foto-columna-para-investigación.jpg"
         />
         <p
-          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-4xl group-hover:bg-black/60 transition duration-300 text-center px-2"
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl group-hover:bg-black/60 transition duration-300 text-center px-2"
         >
           INVESTIGACIÓ
         </p>
@@ -35,7 +35,7 @@
           src="../../assets/img/homepage/top-secret-portada.jpg"
         />
         <p
-          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-4xl group-hover:bg-black/60 transition duration-300 text-center px-2"
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl group-hover:bg-black/60 transition duration-300 text-center px-2"
         >
           TOP SECRET
         </p>
@@ -54,7 +54,7 @@
           src="../../assets/img/homepage/FOTO%20PERFILS.png"
         />
         <p
-          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-4xl group-hover:bg-black/60 transition duration-300 text-center px-2"
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl group-hover:bg-black/60 transition duration-300 text-center px-2"
         >
           PERFILS
         </p>
