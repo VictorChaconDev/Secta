@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center text-4xl md:text-5xl lg:text-6xl font-now font-bold mt-11 mb-11 text-center px-4">
+  <div class="text-white flex justify-center items-center text-4xl md:text-5xl lg:text-6xl font-now font-bold mt-11 mb-11 text-center px-4">
     ECOS DE LA MORT
   </div>
 
@@ -10,10 +10,10 @@
     <div class="flex justify-center hover-group-item">
       <router-link
         to="/investigacio"
-        class="relative w-[450px] h-[700px] rounded-xl overflow-hidden block bg-secta-green transition-all duration-300"
+        class="relative w-[450px] h-[700px] overflow-hidden block bg-secta-green transition-all duration-300"
       >
         <img
-          class="w-full h-full object-cover rounded-xl p-1"
+          class="w-full h-full object-cover p-1"
           src="../../assets/img/homepage/foto-columna-para-investigacion.jpg"
         />
         <p
@@ -28,10 +28,10 @@
     <div class="flex justify-center hover-group-item">
       <router-link
         to="/top-secret"
-        class="relative w-[450px] h-[700px] rounded-xl overflow-hidden block bg-red-700 transition-all duration-300"
+        class="relative w-[450px] h-[700px] overflow-hidden block bg-red-700 transition-all duration-300"
       >
         <img
-          class="w-full h-full object-cover rounded-xl p-1"
+          class="w-full h-full object-cover p-1"
           src="../../assets/img/homepage/top-secret-portada.jpg"
         />
         <p
@@ -46,10 +46,10 @@
     <div class="flex justify-center hover-group-item">
       <router-link
         to="/perfils"
-        class="relative w-[450px] h-[700px] rounded-xl overflow-hidden block bg-secta-green transition-all duration-300"
+        class="relative w-[450px] h-[700px] overflow-hidden block bg-secta-green transition-all duration-300"
       >
         <img
-          class="w-full h-full object-cover rounded-xl p-1"
+          class="w-full h-full object-cover p-1"
           src="../../assets/img/homepage/FOTO%20PERFILS.png"
         />
         <p

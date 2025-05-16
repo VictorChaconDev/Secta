@@ -6,7 +6,7 @@ background-color: black;
     height: 100%;
 }
 
-.hover-group:hover .hover-group-item {
+.hover-group:hover .hover-group-item:not(:hover) {
   filter: brightness(50%);
   transform: scale(1);
   transition: all 0.3s ease;
