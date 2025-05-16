@@ -13,7 +13,7 @@
       >
         <img
           class="w-full p-1 h-full object-cover rounded-xl p-1"
-          src="../../assets/img/homepage/foto-columna-para-investigación.jpg"
+          src="../../assets/img/homepage/foto-columna-para-investigacion.jpg"
         />
         <p
           class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl group-hover:bg-black/60 transition duration-300 text-center px-2"
