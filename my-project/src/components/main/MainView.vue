@@ -1,19 +1,70 @@
-
 <template>
-  <body class="h-screen p-6">
-    <div class="grid grid-cols-3 h-full">
-        <router-link to="/investigacio" as="div" class="font-now bg-secta-light-green  m-7 flex justify-center items-center rounded-xl font-bold text-2xl  hover:bg-green-700 hover:text-white transition-all duration-300">
-          <p class="text-xl ">INVESTIGACIÓ</p>
-        </router-link>
-        <router-link to="/top-secret" as="div" class="font-now bg-secta-light-green m-7 rounded-xl flex justify-center items-center font-bold text-2xl hover:bg-green-700 hover:text-white transition-all duration-300">
-          <p class="text-xl">TOP SECRET</p>
-        </router-link>
-        <router-link to="/perfils" as="div" class="font-now bg-secta-light-green m-7 rounded-xl flex justify-center items-center font-bold text-2xl hover:bg-green-700 hover:text-white transition-all duration-300">
-          <p class="text-xl">PERFILS</p>
-        </router-link>
+  <div class="flex justify-center items-center text-4xl md:text-5xl lg:text-6xl font-now font-bold mt-11 mb-11 text-center px-4">
+    ECOS DE LA MORT
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-10">
+    <!-- Investigació -->
+    <div class="flex justify-center">
+      <router-link
+        ref="link1"
+        to="/investigacio"
+        class="relative group w-[450px] h-[700px] rounded-xl overflow-hidden block bg-secta-green"
+      >
+        <img
+          class="w-full p-1 h-full object-cover rounded-xl p-1"
+          src="../../assets/img/homepage/foto-columna-para-investigacion.jpg"
+        />
+        <p
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl group-hover:bg-black/60 transition duration-300 text-center px-2"
+        >
+          INVESTIGACIÓ
+        </p>
+      </router-link>
     </div>
-</body>
+
+    <!-- Top Secret -->
+    <div class="flex justify-center">
+      <router-link
+        ref="link2"
+        to="/top-secret"
+        class="relative group w-[450px] h-[700px] rounded-xl overflow-hidden block bg-red-700"
+      >
+        <img
+          class="w-full h-full object-cover rounded-xl p-1"
+          src="../../assets/img/homepage/top-secret-portada.jpg"
+        />
+        <p
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl group-hover:bg-black/60 transition duration-300 text-center px-2"
+        >
+          TOP SECRET
+        </p>
+      </router-link>
+    </div>
+
+    <!-- Perfils -->
+    <div class="flex justify-center">
+      <router-link
+        ref="link3"
+        to="/perfils"
+        class="relative group w-[450px] h-[700px] rounded-xl overflow-hidden block bg-secta-green"
+      >
+        <img
+          class="w-full h-full object-cover rounded-xl p-1"
+          src="../../assets/img/homepage/FOTO%20PERFILS.png"
+        />
+        <p
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl group-hover:bg-black/60 transition duration-300 text-center px-2"
+        >
+          PERFILS
+        </p>
+      </router-link>
+    </div>
+  </div>
 </template>
 
+
 <script setup lang="ts">
+
+
 </script>
