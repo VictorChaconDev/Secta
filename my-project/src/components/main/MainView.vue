@@ -3,58 +3,57 @@
     ECOS DE LA MORT
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-10">
-    <!-- Investigació -->
-    <div class="flex justify-center">
+  <!-- Contenedor principal con clase 'hover-group' -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-10 hover-group relative">
+
+    <!-- Tarjeta 1 -->
+    <div class="flex justify-center hover-group-item">
       <router-link
-        ref="link1"
         to="/investigacio"
-        class="relative group w-[450px] h-[700px] rounded-xl overflow-hidden block bg-secta-green"
+        class="relative w-[450px] h-[700px] rounded-xl overflow-hidden block bg-secta-green transition-all duration-300"
       >
         <img
-          class="w-full p-1 h-full object-cover rounded-xl p-1"
+          class="w-full h-full object-cover rounded-xl p-1"
           src="../../assets/img/homepage/foto-columna-para-investigacion.jpg"
         />
         <p
-          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl group-hover:bg-black/60 transition duration-300 text-center px-2"
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"
         >
           INVESTIGACIÓ
         </p>
       </router-link>
     </div>
 
-    <!-- Top Secret -->
-    <div class="flex justify-center">
+    <!-- Tarjeta 2 -->
+    <div class="flex justify-center hover-group-item">
       <router-link
-        ref="link2"
         to="/top-secret"
-        class="relative group w-[450px] h-[700px] rounded-xl overflow-hidden block bg-red-700"
+        class="relative w-[450px] h-[700px] rounded-xl overflow-hidden block bg-red-700 transition-all duration-300"
       >
         <img
           class="w-full h-full object-cover rounded-xl p-1"
           src="../../assets/img/homepage/top-secret-portada.jpg"
         />
         <p
-          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl group-hover:bg-black/60 transition duration-300 text-center px-2"
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"
         >
           TOP SECRET
         </p>
       </router-link>
     </div>
 
-    <!-- Perfils -->
-    <div class="flex justify-center">
+    <!-- Tarjeta 3 -->
+    <div class="flex justify-center hover-group-item">
       <router-link
-        ref="link3"
         to="/perfils"
-        class="relative group w-[450px] h-[700px] rounded-xl overflow-hidden block bg-secta-green"
+        class="relative w-[450px] h-[700px] rounded-xl overflow-hidden block bg-secta-green transition-all duration-300"
       >
         <img
           class="w-full h-full object-cover rounded-xl p-1"
           src="../../assets/img/homepage/FOTO%20PERFILS.png"
         />
         <p
-          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl group-hover:bg-black/60 transition duration-300 text-center px-2"
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"
         >
           PERFILS
         </p>
@@ -62,9 +61,3 @@
     </div>
   </div>
 </template>
-
-
-<script setup lang="ts">
-
-
-</script>

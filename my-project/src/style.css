@@ -5,3 +5,19 @@ background-color: black;
     padding: 0;
     height: 100%;
 }
+
+.hover-group:hover .hover-group-item {
+  filter: brightness(50%);
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.hover-group-item {
+  transition: all 0.3s ease;
+}
+
+.hover-group-item:hover {
+  filter: brightness(100%) !important;
+  transform: scale(1.05);
+  z-index: 10;
+}
