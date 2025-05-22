@@ -1,5 +1,4 @@
 <template>
-  <body>
     <div v-if="!showVideo" class="min-h-screen flex flex-col items-center justify-center">
     <div class="w-full max-w-md p-8 rounded-lg shadow-lg">
       <h1 v-if="!accessGranted" class="text-4xl font-bold text-center mb-6 text-red-600">🔒 Accés restringit</h1>
@@ -69,16 +68,80 @@
         </button>
     </div>
   </div>
-  <div v-if="showVideo" class="h-screen w-screen relative justify-center items-center">
-    <div class="absolute top-0 left-1/2 transform -translate-x-1/2">
-      <button @click="scrollToTop" class="opacity-65 hover:opacity-100 hover:translate-y-2 transition-all duration-200">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="h-10 w-10">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-        </svg>
-      </button>
-    </div>
+<!-- Contenedor principal pantalla completa -->
+<!--    Segona part (crèdits etc...) -->
+<div v-if="showVideo" class="h-screen w-screen relative justify-center items-center flex flex-col overflow-hidden">
+
+  <!-- Botón superior centrado -->
+  <div class="absolute top-4 left-1/2 transform -translate-x-1/2 z-10">
+    <button @click="scrollToTop" class="opacity-65 hover:opacity-100 hover:translate-y-2 transition-all duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="h-10 w-10">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+      </svg>
+    </button>
   </div>
-  </body>
+
+  <!-- Contenedor principal -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-10 hover-group h-full w-full items-center">
+
+    <!-- Tarjeta 1 -->
+    <div class="flex justify-center hover-group-item">
+      <router-link
+        to="/liders"
+        class="relative w-[50vh] h-[70vh] overflow-hidden block bg-secta-green transition-all duration-300"
+      >
+        <img
+          class="w-full h-full object-cover p-1"
+          src="../../assets/img/topSecret/portadaInformacio.png"
+        />
+        <p
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"
+        >
+          INFORMACIÓ
+        </p>
+      </router-link>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="flex justify-center hover-group-item">
+      <router-link
+        to="/reclutats"
+        class="relative w-[50vh] h-[70vh] overflow-hidden block bg-secta-green transition-all duration-300"
+      >
+        <img
+          class="w-full h-full object-cover p-1"
+          src="../../assets/img/topSecret/portadaCredits.png"
+        />
+        <p
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"
+        >
+          CRÈDITS
+        </p>
+      </router-link>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="flex justify-center hover-group-item">
+      <router-link
+        to="/test"
+        class="relative w-[50vh] h-[70vh] overflow-hidden block bg-secta-green transition-all duration-300"
+      >
+        <img
+          class="w-full h-full object-cover p-1"
+          src="../../assets/img/topSecret/portadaBTS.png"
+        />
+        <p
+          class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"
+        >
+          BEHIND <br> THE <br> SCENES
+        </p>
+      </router-link>
+    </div>
+
+  </div>
+</div>
+
+
 </template>
 
 <script setup lang="ts">
