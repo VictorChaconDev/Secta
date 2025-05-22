@@ -35,7 +35,6 @@
 </template>
 
 <script setup lang="ts">
-
 import { EffectCoverflow, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import 'swiper/css';
