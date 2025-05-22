@@ -40,8 +40,9 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
+import type { Swiper as SwiperType } from 'swiper';
 
-const onSwiper = (swiper) => {
+const onSwiper = (swiper: SwiperType) => {
   console.log(swiper);
 
   // Espera un moment perquè loop faci la seva feina i després ves a la slide que vulguis
