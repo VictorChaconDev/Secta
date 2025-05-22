@@ -11,7 +11,7 @@
         stretch: 100,
         depth: 100,
         modifier: 3,
-        slideShadows: true,
+        slideShadows: false,
       }"
         :slides-per-view="2"
         :space-between="10"
@@ -133,8 +133,15 @@
 </div>
     <!--  PISTA 10-->
 <div class="h-screen w-screen p-4 flex flex-col">
-<!-- FALTAN FOTOS PISTA 10-->
-</div>
+    <div class="flex-1 flex justify-center items-center w-full gap-4">
+      <img src="../../assets/img/investigacio/fotoPista10.png"
+         alt="Noticia pista 4"
+         class="w-2/5 max-h-[70vh] object-contain">
+      <img src="../../assets/img/investigacio/blocDeNotasPista10.jpg"
+         alt="Bloc de notas PISTA 4"
+         class="w-2/5 max-h-[60vh] object-contain">
+    </div>
+  </div>
      <!--  PISTA 11-->
 <div class="h-screen w-screen p-4 flex flex-col">
 <!-- FALTA VLOG 4: LLIBRE GRAN DOCTOR-->

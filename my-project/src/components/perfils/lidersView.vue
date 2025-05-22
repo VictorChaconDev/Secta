@@ -6,7 +6,7 @@
         :effect="'coverflow'"
         :centeredSlides="true"
         :coverflowEffect="{
-        rotate: 0,
+        rotate: 80,
         stretch: 100,
         depth: 100,
         modifier: 3,
@@ -16,19 +16,16 @@
         :space-between="10"
         :navigation="true"
         :grabCursor="true"
-        :loop="true"
+        :loop="false"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
         class="relative h-5/6"
       >
         <swiper-slide>
-          <img src="../../assets/img/perfils/reclutats/reclutada1.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
+          <img src="../../assets/img/perfils/liders/lider1.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
         </swiper-slide>
         <swiper-slide>
-          <img src="../../assets/img/perfils/reclutats/reclutat2.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="../../assets/img/perfils/reclutats/reclutada3.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
+          <img src="../../assets/img/perfils/liders/lider2.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
         </swiper-slide>
       </swiper>
   </div>

@@ -4,6 +4,7 @@ import PerfilsView from "../components/perfils/perfilsView.vue";
 import ReclutatsView from "../components/perfils/reclutatsView.vue";
 import TopSecretView from "../components/topSecret/topSecretView.vue";
 import InvestigacioView from "../components/investigacio/investigacioView.vue";
+import LidersView from "../components/perfils/lidersView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,10 @@ const router = createRouter({
     path: "/investigacio",
       name: "Investigacio",
       component: InvestigacioView
+    },{
+    path: "/liders",
+      name: "Liders",
+      component: LidersView
     }
   ],
 });
