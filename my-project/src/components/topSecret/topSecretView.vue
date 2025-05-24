@@ -87,7 +87,7 @@
     <!-- Tarjeta 1 -->
     <div class="flex justify-center hover-group-item">
       <router-link
-        to="/liders"
+        to="/informacio"
         class="relative w-[50vh] h-[70vh] overflow-hidden block bg-secta-green transition-all duration-300"
       >
         <img
@@ -105,7 +105,7 @@
     <!-- Tarjeta 2 -->
     <div class="flex justify-center hover-group-item">
       <router-link
-        to="/reclutats"
+        to="/credits"
         class="relative w-[50vh] h-[70vh] overflow-hidden block bg-secta-green transition-all duration-300"
       >
         <img
@@ -123,7 +123,7 @@
     <!-- Tarjeta 3 -->
     <div class="flex justify-center hover-group-item">
       <router-link
-        to="/test"
+        to="/behind-the-scenes"
         class="relative w-[50vh] h-[70vh] overflow-hidden block bg-secta-green transition-all duration-300"
       >
         <img
