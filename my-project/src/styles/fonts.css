@@ -11,3 +11,17 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'WCManoNegra';
+  src: url('../assets/fonts/WCManoNegra/WCManoNegraBta.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WCManoNegra';
+  src: url('../assets/fonts/WCManoNegra/WCManoNegraBoldBta.ttf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}

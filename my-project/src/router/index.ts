@@ -6,6 +6,7 @@ import TopSecretView from "../components/topSecret/topSecretView.vue";
 import InvestigacioView from "../components/investigacio/investigacioView.vue";
 import LidersView from "../components/perfils/lidersView.vue";
 import InformacioView from "../components/topSecret/informacioView.vue"
+import CreditsView from "../components/topSecret/creditsView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,10 @@ const router = createRouter({
     path: "/informacio",
       name: "Informacio",
       component: InformacioView
+    },{
+    path: "/credits",
+      name: "Credits",
+      component: CreditsView
     }
   ],
 });
