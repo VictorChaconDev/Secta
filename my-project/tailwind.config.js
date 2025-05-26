@@ -11,6 +11,7 @@ export default {
       },
       fontFamily: {
         now: ['Now', 'sans-serif'],
+        wc: ['WCManoNegra', 'cursive'],
       },
     },
   },

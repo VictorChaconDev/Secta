@@ -1,47 +1,70 @@
 <template>
-  <!-- Contenidor principal que ocupa tota la pantalla -->
-  <div class="h-screen w-screen flex flex-col text-white">
+  <!-- EQUIP TÈCNIC -->
+  <div class="h-screen w-screen flex flex-col text-white overflow-hidden">
     <!-- TÍTOL -->
     <div class="text-center text-4xl md:text-5xl lg:text-6xl font-now py-4">
       EQUIP TÈCNIC
     </div>
+    <!-- Imatge -->
+    <div class="flex-1 flex justify-center items-center">
+      <img
+        class="max-h-full max-w-full p-4 md:p-8 lg:p-12 object-contain"
+        src="../../assets/img/topSecret/credits/equipTecnic.png"
+        alt="Equip Tècnic"
+      />
+    </div>
+  </div>
 
-    <!-- TEXT -->
-    <div class="flex-1 p-4 flex flex-col">
-      <!-- Contenidor responsive -->
-      <div class="flex-1 flex flex-col lg:flex-row justify-center items-center w-full gap-4 pb-16">
-        <!-- Text esquerre -->
-        <div class="bg-white px-4 py-2 w-full md:max-w-[90%] lg:max-w-[40%] h-full overflow-auto text-black">
-          <p class="font-now text-2xl p-5 leading-relaxed">
-            En plena era digital, on les xarxes socials marquen la pauta del pensament col·lectiu, cada vegada és més difícil distingir entre moviments
-            legítims i <b>organitzacions que amaguen intencions ocultes.</b> El nostre projecte multimèdia explora un fenomen alarmant però real: la manipulació
-            social que exerceixen certs grups que, sota la façana d'activisme en el que tenen un objectiu de millora i canvi, <b>amaguen estructures sectàries
-            amb objectius econòmics o de control.</b> <br><br>
-            Segons informes de la Red de Prevención del Sectarismo,<b> cada vegada hi ha més joves captats per grups que prometen solucions</b> a crisis com el canvi
-            climàtic o la insatisfacció vital. <b>Aprofitant la vulnerabilitat emocional i el desig de pertinença,</b> aquests col·lectius utilitzen estratègies de
-            seducció emocional, lideratges carismàtics i discurs ideològic per atraure i retenir membres.
-          </p>
-        </div>
+ <!-- EQUIP ARTÍSTIC -->
+<div class="h-screen w-screen flex flex-col text-white overflow-hidden">
+  <div class="flex-1 flex flex-col items-center px-4 gap-4">
+    <!-- TÍTOL GENERAL -->
+    <div class="text-center text-4xl md:text-5xl lg:text-6xl font-now mt-4">
+      EQUIP ARTÍSTIC
+    </div>
+    <!-- Subtítol -->
+    <div class="text-center text-base md:text-2xl lg:text-xl font-now mb-6">
+      Especial agraïment a
+    </div>
 
-        <!-- Separador vertical blanc amb espai (mx-10 per seprar textos mes del separador)-->
-        <div class="w-full lg:w-1 h-1 lg:h-full bg-white mx-0 lg:mx-10 my-4 lg:my-0"></div>
-
-        <!-- Text dret -->
-        <div class="bg-white px-4 py-2 w-full md:max-w-[90%] lg:max-w-[40%] h-full overflow-auto text-black">
-          <p class="font-now text-2xl leading-relaxed p-5">
-            A través d’un curtmetratge i un blog narratiu, presentem, per una banda, la història fictícia de Raquel, una estudiant reclutada per una
-            aparent organització ecologista que resulta ser una secta universitària. I, per l’altre banda, la història de Caleb, un estudiant que investiga
-            aquesta organització. Aquest relat, tot i ser ficció, es basa en <b>dinàmiques reals </b>que avui dia afecten centenars de joves arreu del món. <b>La incredulitat
-            social</b> davant aquest tipus de manipulació sovint juga a favor dels captadors: <b>"a mi no em passaria mai",</b> pensen molts, sense adonar-se que el primer pas
-            cap a la captació és justament <b>no detectar-ne els senyals.</b> <br><br>
-            El nostre projecte busca fer <b>reflexionar sobre la necessitat de criteri propi, d’esperit crític i de suport emocional</b> per a aquells que busquen un lloc
-            on sentir-se escoltats. Perquè darrere d’un discurs aparentment inofensiu pot amagar-se un mecanisme de control molt ben dissenyat.
-          </p>
-        </div>
+    <!-- Contenidor d’imatges -->
+    <div class="flex justify-center items-start gap-28 w-full">
+      <!-- Columna 1 -->
+      <div class="flex flex-col items-center text-center basis-1/3">
+        <div class="font-wc text-xl md:text-3xl font-semibold">Harrison Gaetan</div>
+        <div class="font-wc text-xl md:text-2xl font-semibold mb-2">Caleb</div>
+        <img
+          src="../../assets/img/topSecret/credits/fotoHarry.jpg"
+          alt="Persona 1"
+          class="w-full max-h-[70vh] object-contain pb-10"
+        />
+      </div>
+      <!-- Columna 2 -->
+      <div class="flex flex-col items-center text-center basis-1/3">
+        <div class="font-wc text-xl md:text-3xl font-semibold">Andrea L. Borrás</div>
+        <div class="font-wc text-xl md:text-2xl font-semibold mb-2">Raquel</div>
+        <img
+          src="../../assets/img/topSecret/credits/fotoAndrea.jpg"
+          alt="Persona 2"
+          class="w-full max-h-[70vh] object-contain pb-10"
+        />
+      </div>
+      <!-- Columna 3 -->
+      <div class="flex flex-col items-center text-center basis-1/3">
+        <div class="font-wc text-xl md:text-3xl font-semibold">Kilian Roel</div>
+        <div class="font-wc text-xl md:text-2xl font-semibold mb-2">David</div>
+        <img
+          src="../../assets/img/topSecret/credits/fotoKilian.jpg"
+          alt="Persona 3"
+          class="w-full max-h-[70vh] object-contain pb-10"
+        />
       </div>
     </div>
   </div>
+</div>
 </template>
+
+
 
 <script setup lang="ts">
 
