@@ -160,7 +160,6 @@
 import { ref } from 'vue';
 import InputText from 'primevue/inputtext';
 import Button from 'primevue/button';
-import Message from 'primevue/message';
 
 const password = ref('');
 const accessGranted = ref(false);
