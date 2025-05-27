@@ -15,7 +15,7 @@
       >
         <img
           class="w-full h-full object-cover p-1"
-          src="../../assets/img/perfils/foto-liders-portada.jpg"
+          src="/img/perfils/foto-liders-portada.jpg"
         />
         <p
           class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"
@@ -33,7 +33,7 @@
       >
         <img
           class="w-full h-full object-cover p-1"
-          src="../../assets/img/perfils/reclutats-portada.jpg"
+          src="/img/perfils/reclutats-portada.jpg"
         />
         <p
           class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"
@@ -51,7 +51,7 @@
       >
         <img
           class="w-full h-full object-cover p-1"
-          src="../../assets/img/perfils/foto-portada-test.jpg"
+          src="/img/perfils/foto-portada-test.jpg"
         />
         <p
           class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"

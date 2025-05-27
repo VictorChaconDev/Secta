@@ -22,13 +22,13 @@
         class="relative h-5/6"
       >
         <swiper-slide>
-          <img src="../../assets/img/perfils/reclutats/reclutada1.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
+          <img src="/img/perfils/reclutats/reclutada1.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
         </swiper-slide>
         <swiper-slide>
-          <img src="../../assets/img/perfils/reclutats/reclutat2.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
+          <img src="/img/perfils/reclutats/reclutat2.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
         </swiper-slide>
         <swiper-slide>
-          <img src="../../assets/img/perfils/reclutats/reclutada3.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
+          <img src="/img/perfils/reclutats/reclutada3.png" alt="Captura 1 ECO" class="w-full h-full object-contain">
         </swiper-slide>
       </swiper>
   </div>

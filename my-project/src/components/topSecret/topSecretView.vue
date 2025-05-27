@@ -42,11 +42,11 @@
       <video
             ref="videoPlayer"
             class="w-[90vw] h-[80vh] object-contain"
-            poster="../../assets/img/portadaCorto.png"
+            poster="/img/portadaCorto.png"
             @click="pauseVideo"
             @contextmenu.prevent
           >
-            <source src="../../assets/videos/cortoVideo.mp4" type="video/mp4">
+            <source src="/videos/cortoVideo.mp4" type="video/mp4">
             Tu navegador no soporta la reproducción de video.
 
       </video>
@@ -92,7 +92,7 @@
       >
         <img
           class="w-full h-full object-cover p-1"
-          src="../../assets/img/topSecret/portadaInformacio.png"
+          src="/img/topSecret/portadaInformacio.png"
         />
         <p
           class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"
@@ -110,7 +110,7 @@
       >
         <img
           class="w-full h-full object-cover p-1"
-          src="../../assets/img/topSecret/portadaCredits.png"
+          src="/img/topSecret/portadaCredits.png"
         />
         <p
           class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"
@@ -128,7 +128,7 @@
       >
         <img
           class="w-full h-full object-cover p-1"
-          src="../../assets/img/topSecret/portadaBTS.png"
+          src="/img/topSecret/portadaBTS.png"
         />
         <p
           class="absolute inset-0 flex justify-center items-center text-white font-bold text-2xl md:text-3xl lg:text-5xl transition duration-300 text-center px-2"

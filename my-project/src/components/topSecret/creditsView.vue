@@ -9,7 +9,7 @@
     <div class="flex-1 flex justify-center items-center">
       <img
         class="max-h-full max-w-full p-4 md:p-8 lg:p-12 object-contain"
-        src="../../assets/img/topSecret/credits/equipTecnic.png"
+        src="/img/topSecret/credits/equipTecnic.png"
         alt="Equip Tècnic"
       />
     </div>
@@ -34,7 +34,7 @@
         <div class="font-wc text-xl md:text-3xl font-semibold">Harrison Gaetan</div>
         <div class="font-wc text-xl md:text-2xl font-semibold mb-2">Caleb</div>
         <img
-          src="../../assets/img/topSecret/credits/fotoHarry.jpg"
+          src="/img/topSecret/credits/fotoHarry.jpg"
           alt="Persona 1"
           class="w-full max-h-[70vh] object-contain pb-10"
         />
@@ -44,7 +44,7 @@
         <div class="font-wc text-xl md:text-3xl font-semibold">Andrea L. Borrás</div>
         <div class="font-wc text-xl md:text-2xl font-semibold mb-2">Raquel</div>
         <img
-          src="../../assets/img/topSecret/credits/fotoAndrea.jpg"
+          src="/img/topSecret/credits/fotoAndrea.jpg"
           alt="Persona 2"
           class="w-full max-h-[70vh] object-contain pb-10"
         />
@@ -54,7 +54,7 @@
         <div class="font-wc text-xl md:text-3xl font-semibold">Kilian Roel</div>
         <div class="font-wc text-xl md:text-2xl font-semibold mb-2">David</div>
         <img
-          src="../../assets/img/topSecret/credits/fotoKilian.jpg"
+          src="/img/topSecret/credits/fotoKilian.jpg"
           alt="Persona 3"
           class="w-full max-h-[70vh] object-contain pb-10"
         />

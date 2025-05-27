@@ -23,13 +23,13 @@
         class="relative h-4/6"
       >
         <swiper-slide>
-          <img src="../../assets/img/investigacio/captura1eco.jpg" alt="Captura 1 ECO" class="w-full h-full object-contain">
+          <img src="/img/investigacio/captura1eco.jpg" alt="Captura 1 ECO" class="w-full h-full object-contain">
         </swiper-slide>
         <swiper-slide>
-          <img src="../../assets/img/investigacio/captura2eco.jpg" alt="Captura 1 ECO" class="w-full h-full object-contain">
+          <img src="/img/investigacio/captura2eco.jpg" alt="Captura 1 ECO" class="w-full h-full object-contain">
         </swiper-slide>
         <swiper-slide>
-          <img src="../../assets/img/investigacio/captura3eco.jpg" alt="Captura 1 ECO" class="w-full h-full object-contain">
+          <img src="/img/investigacio/captura3eco.jpg" alt="Captura 1 ECO" class="w-full h-full object-contain">
         </swiper-slide>
       </swiper>
       <p style="font-family: 'Roboto Mono'" class="text-white text-center mt-14 text-2xl w-10/12 mx-auto">He revisat totes les publicacions del insta de ECO i a totes hi ha la frase de
@@ -40,10 +40,10 @@
     <div class="h-screen w-screen p-4 flex flex-col">
 <!--  <h1 class="text-3xl text-blue-700 font-bold text-center mb-4">PISTA 2</h1>-->
   <div class="flex-1 flex justify-center items-center w-full gap-4">
-    <img src="../../assets/img/investigacio/libroPortada.jpg"
+    <img src="/img/investigacio/libroPortada.jpg"
          alt="Portada llibre Gran Doctor, El secret de l'ecologia i la fi del mon pur."
          class="w-2/5 max-h-[70vh] object-contain">
-    <img src="../../assets/img/investigacio/blocDeNotasPista2.png"
+    <img src="/img/investigacio/blocDeNotasPista2.png"
          alt="Bloc de notes en blanc"
          class="w-2/5 max-h-[120vh] object-contain">
   </div>
@@ -55,10 +55,10 @@
 <!--  PISTA 4-->
   <div class="h-screen w-screen p-4 flex flex-col">
     <div class="flex-1 flex justify-center items-center w-full gap-4">
-      <img src="../../assets/img/investigacio/blocDeNotasPista4.png"
+      <img src="/img/investigacio/blocDeNotasPista4.png"
          alt="Bloc de notas PISTA 4"
          class="w-2/5 max-h-[90vh] object-contain">
-    <img src="../../assets/img/investigacio/noticiaPista4.png"
+    <img src="/img/investigacio/noticiaPista4.png"
          alt="Noticia pista 4"
          class="w-2/5 max-h-[80vh] object-contain">
     </div>
@@ -70,7 +70,7 @@
     preload="auto"
     ref="videoPlayer"
     class="w-full h-full object-contain p-20"
-    poster="../../assets/img/portadaCorto.png"
+    poster="/img/portadaCorto.png"
     controls
     @contextmenu.prevent
   >
@@ -93,7 +93,7 @@
     preload="auto"
     ref="videoPlayer"
     class="w-full h-full object-contain p-20"
-    poster="../../assets/img/portadaCorto.png"
+    poster="/img/portadaCorto.png"
     controls
     @contextmenu.prevent
   >
@@ -107,7 +107,7 @@
     PISTA 7
   </h1>
   <div class="flex-1 flex flex-col md:flex-row justify-center items-center w-full gap-4 mt-6 px-2">
-    <img src="../../assets/img/investigacio/informePista7.png"
+    <img src="/img/investigacio/informePista7.png"
          alt="Informe pista 7"
          class="w-full md:w-2/5 max-h-[80vh] object-contain">
 
@@ -136,7 +136,7 @@
     preload="auto"
     ref="videoPlayer"
     class="w-full h-full object-contain p-20"
-    poster="../../assets/img/portadaCorto.png"
+    poster="/img/portadaCorto.png"
     controls
     @contextmenu.prevent
   >
@@ -165,7 +165,7 @@
       Però aquí ve la part estranya: després del seu acomiadament, Marçal desapareix completament. Puf. Ni rastre. Ningú sap què li va passar. És com si el tio s’hagués
       <span class="text-red-700">esfumat del món.</span>
     </p>
-    <img src="../../assets/img/investigacio/pista9.png"
+    <img src="/img/investigacio/pista9.png"
          alt="Pista 9"
          class="w-full md:w-2/5 max-h-[80vh] object-contain">
   </div>
@@ -173,10 +173,10 @@
     <!--  PISTA 10-->
 <div class="h-screen w-screen p-4 flex flex-col">
     <div class="flex-1 flex justify-center items-center w-full gap-4">
-      <img src="../../assets/img/investigacio/fotoPista10.png"
+      <img src="/img/investigacio/fotoPista10.png"
          alt="Noticia pista 4"
          class="w-2/5 max-h-[70vh] object-contain">
-      <img src="../../assets/img/investigacio/blocDeNotasPista10.jpg"
+      <img src="/img/investigacio/blocDeNotasPista10.jpg"
          alt="Bloc de notas PISTA 4"
          class="w-2/5 max-h-[60vh] object-contain">
     </div>
@@ -195,7 +195,7 @@
   </h1>
 
   <div class="flex-1 flex flex-col md:flex-row justify-center items-center w-full gap-4 px-2">
-    <img src="../../assets/img/investigacio/pista12.png"
+    <img src="/img/investigacio/pista12.png"
          alt="Pista 9"
          class="h-[65vh] w-auto max-w-full object-contain">
   </div>
@@ -207,7 +207,7 @@
     preload="auto"
     ref="videoPlayer"
     class="w-full h-full object-contain p-20"
-    poster="../../assets/img/portadaCorto.png"
+    poster="/img/portadaCorto.png"
     controls
     @contextmenu.prevent
   >
