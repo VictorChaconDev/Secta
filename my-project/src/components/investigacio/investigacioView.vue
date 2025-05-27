@@ -64,13 +64,42 @@
     </div>
   </div>
 <!--  PISTA 5-->
-<div class="h-screen w-screen p-4 flex flex-col">
+<!--  CAMARA OCULTA 1-->
+<div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    poster="../../assets/img/portadaCorto.png"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/investigacio/camaraOculta1.mov" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
+</div>
+
+<!--  CAMARA OCULTA 2-->
+  <div class="h-screen w-screen p-4 flex flex-col">
 <!-- FALTA VIDEO CAMARA OCULTA-->
 </div>
-<!--  AQUI QUIZZ JOC D'OPCIONS TIPO TEST, PER DESBLOQUEJAR SEGÜENT TRAM-->
+<!--  CAMARA OCULTA 3-->
+  <div class="h-screen w-screen p-4 flex flex-col">
+<!-- FALTA VIDEO CAMARA OCULTA-->
+</div>
   <!--  PISTA 6-->
-<div class="h-screen w-screen p-4 flex flex-col">
-<!-- FALTA VIDEO VLOG 2 amigo de raquel pa sacar info-->
+<div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    poster="../../assets/img/portadaCorto.png"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/investigacio/vlog2.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
 </div>
   <!-- PISTA 7 -->
 <div class="h-screen w-screen p-4 flex flex-col overflow-auto">
@@ -102,8 +131,18 @@
   </div>
 </div>
   <!--  PISTA 8-->
-<div class="h-screen w-screen p-4 flex flex-col">
-<!-- FALTA VIDEO VLOG 3-->
+<div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    poster="../../assets/img/portadaCorto.png"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/investigacio/vlog3.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
 </div>
   <!-- PISTA 9 -->
 <div class="h-screen w-screen p-4 flex flex-col overflow-auto">
@@ -162,6 +201,20 @@
   </div>
 </div>
 <!--  FALTAN BLOGS-->
+<!--  VLOG FINAL-->
+  <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    poster="../../assets/img/portadaCorto.png"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/investigacio/vlogFinal.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
+</div>
 </template>
 
 <script setup lang="ts">
@@ -171,6 +224,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 import type { Swiper as SwiperType } from 'swiper';
+import { ref } from "vue";
+
+const videoPlayer = ref<HTMLVideoElement | null>(null);
 
 const onSwiper = (swiper: SwiperType) => {
   console.log(swiper);
