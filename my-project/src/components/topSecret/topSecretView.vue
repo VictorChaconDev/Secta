@@ -1,20 +1,31 @@
 <template>
     <div v-if="!showVideo" class="min-h-screen flex flex-col items-center justify-center">
-    <div class="w-full max-w-md p-8 rounded-lg shadow-lg">
-      <h1 v-if="!accessGranted" class="text-4xl font-bold text-center mb-6 text-red-600">🔒 Accés restringit</h1>
+    <div class="w-full max-w-xl p-8 rounded-lg shadow-lg bg-black bg-opacity-70 text-center flex flex-col items-center">
+  <h1 v-if="!accessGranted" class="text-4xl md:text-5xl font-now font-bold text-red-600 mb-6">
+    ACCÉS RESTRINGIT!!
+  </h1>
+    <p v-if="!accessGranted && !error" class="mb-6 font-now font-bold text-white text-lg md:text-xl leading-relaxed">
+    Queda poc per descobrir la veritat.<br>
+    Aquesta és la <span class="text-red-400">ÚLTIMA PISTA DEFINITIVA</span><br>
+    i no pot estar oberta al públic...
+    </p>
+      <p v-else-if="!accessGranted && error" class="mb-6 font-now font-bold text-white text-lg md:text-xl leading-relaxed">
+        Upsss... no has estat gaire atent, eh. Va, si no te'n recordes, <br>
+        mira la PISTA 1 i després torna a TOP SECRET. <br>
+        <span class="text-xs">(No cal que sigui en llatí)</span>
+      </p>
 
       <div v-if="!accessGranted">
         <div class="flex flex-col 4">
-          <Message class="mb-2" v-if="error" severity="error" :closable="false">{{ error }}</Message>
-
           <InputText
-            type="password"
-            v-model="password"
-            placeholder="Introdueix la contrasenya"
-            class="w-full mb-2"
-            :feedback="false"
-            @keyup.enter="checkPassword"
-          />
+          type="password"
+          v-model="password"
+          placeholder="Introdueix la contrasenya"
+          class="mb-4 text-lg px-6 py-4 w-[400px]"
+          :feedback="false"
+          @keyup.enter="checkPassword"
+        />
+
 
           <Button
             label="Acceptar"
@@ -31,7 +42,7 @@
         enter-class="opacity-0"
         leave-to-class="opacity-0">
         <div v-if="accessGranted && !timeOutTransition" class="text-center" key="message">
-          <h1 class="text-xl font-semibold mb-4 text-green-600">🎉 Accés concedit!</h1>
+          <h1 class="text-5xl font-semibold mb-4 text-green-600">ACCÉS CONCEDIT!</h1>
         </div>
       </transition>
     </div>
@@ -156,14 +167,13 @@ const accessGranted = ref(false);
 const showVideo = ref(false);
 const timeOutTransition = ref(false);
 const isPlaying = ref(false);
-const error = ref('');
+const error = ref(false);
 
 const videoPlayer = ref<HTMLVideoElement | null>(null);
 
 const checkPassword = () => {
   if (password.value === 'DES DEL CEL AL CENTRE DE LA TERRA' || password.value === 'des del cel al centre de la terra' || password.value === '') {
     accessGranted.value = true;
-    error.value = '';
 
     setTimeout(() =>{
 
@@ -175,7 +185,7 @@ const checkPassword = () => {
     }, 2000);
 
   } else {
-    error.value = 'Contrasenya incorrecta. Intenta-ho de nou.';
+    error.value = true;
     password.value = '';
   }
 };
@@ -228,4 +238,14 @@ const scrollToBottom = () => {
     .animate-float {
         animation: float 3s ease-in-out infinite;
     }
+    input::placeholder {
+  text-align: center;
+  font-family: 'font-now', sans-serif;
+  font-weight: normal;
+}
+
+input {
+  text-align: center;
+  font-family: 'font-now', sans-serif;
+}
 </style>
