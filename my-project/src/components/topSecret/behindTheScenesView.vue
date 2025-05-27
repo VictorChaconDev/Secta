@@ -1,4 +1,8 @@
 <template>
+  <!-- TÍTOL -->
+    <div class="text-center text-4xl md:text-5xl lg:text-6xl font-now py-4 text-white">
+      BEHIND THE SCENES
+    </div>
   <div class="min-h-screen w-screen bg-black text-white p-10">
     <!-- Galería justificada tipo Flickr -->
     <div class="gallery">
