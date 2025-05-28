@@ -66,17 +66,17 @@
 <!--  PISTA 5-->
 <!--  CAMARA OCULTA 1-->
 <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
-  <video
-    preload="auto"
-    ref="videoPlayer"
-    class="w-full h-full object-contain p-20"
-    poster="/img/portadaCorto.png"
-    controls
-    @contextmenu.prevent
-  >
-    <source src="/videos/investigacio/camaraOculta1.mov" type="video/mp4" />
-    Tu navegador no soporta la reproducción de video.
-  </video>
+<!--  <video-->
+<!--    preload="auto"-->
+<!--    ref="videoPlayer"-->
+<!--    class="w-full h-full object-contain p-20"-->
+<!--    poster="/img/portadaCorto.png"-->
+<!--    controls-->
+<!--    @contextmenu.prevent-->
+<!--  >-->
+<!--    <source src="/videos/investigacio/camaraOculta1.mov" type="video/mp4" />-->
+<!--    Tu navegador no soporta la reproducción de video.-->
+<!--  </video>-->
 </div>
 
 <!--  CAMARA OCULTA 2-->
@@ -89,17 +89,17 @@
 </div>
   <!--  PISTA 6-->
 <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
-  <video
-    preload="auto"
-    ref="videoPlayer"
-    class="w-full h-full object-contain p-20"
-    poster="/img/portadaCorto.png"
-    controls
-    @contextmenu.prevent
-  >
-    <source src="/videos/investigacio/vlog2.mp4" type="video/mp4" />
-    Tu navegador no soporta la reproducción de video.
-  </video>
+<!--  <video-->
+<!--    preload="auto"-->
+<!--    ref="videoPlayer"-->
+<!--    class="w-full h-full object-contain p-20"-->
+<!--    poster="/img/portadaCorto.png"-->
+<!--    controls-->
+<!--    @contextmenu.prevent-->
+<!--  >-->
+<!--    <source src="/videos/investigacio/vlog2.mp4" type="video/mp4" />-->
+<!--    Tu navegador no soporta la reproducción de video.-->
+<!--  </video>-->
 </div>
   <!-- PISTA 7 -->
 <div class="h-screen w-screen p-4 flex flex-col overflow-auto">
@@ -132,17 +132,17 @@
 </div>
   <!--  PISTA 8-->
 <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
-  <video
-    preload="auto"
-    ref="videoPlayer"
-    class="w-full h-full object-contain p-20"
-    poster="/img/portadaCorto.png"
-    controls
-    @contextmenu.prevent
-  >
-    <source src="/videos/investigacio/vlog3.mp4" type="video/mp4" />
-    Tu navegador no soporta la reproducción de video.
-  </video>
+<!--  <video-->
+<!--    preload="auto"-->
+<!--    ref="videoPlayer"-->
+<!--    class="w-full h-full object-contain p-20"-->
+<!--    poster="/img/portadaCorto.png"-->
+<!--    controls-->
+<!--    @contextmenu.prevent-->
+<!--  >-->
+<!--    <source src="/videos/investigacio/vlog3.mp4" type="video/mp4" />-->
+<!--    Tu navegador no soporta la reproducción de video.-->
+<!--  </video>-->
 </div>
   <!-- PISTA 9 -->
 <div class="h-screen w-screen p-4 flex flex-col overflow-auto">
@@ -203,17 +203,17 @@
 <!--  FALTAN BLOGS-->
 <!--  VLOG FINAL-->
   <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
-  <video
-    preload="auto"
-    ref="videoPlayer"
-    class="w-full h-full object-contain p-20"
-    poster="/img/portadaCorto.png"
-    controls
-    @contextmenu.prevent
-  >
-    <source src="/videos/investigacio/vlogFinal.mp4" type="video/mp4" />
-    Tu navegador no soporta la reproducción de video.
-  </video>
+<!--  <video-->
+<!--    preload="auto"-->
+<!--    ref="videoPlayer"-->
+<!--    class="w-full h-full object-contain p-20"-->
+<!--    poster="/img/portadaCorto.png"-->
+<!--    controls-->
+<!--    @contextmenu.prevent-->
+<!--  >-->
+<!--    <source src="/videos/investigacio/vlogFinal.mp4" type="video/mp4" />-->
+<!--    Tu navegador no soporta la reproducción de video.-->
+<!--  </video>-->
 </div>
 </template>
 
@@ -226,7 +226,7 @@ import 'swiper/css/effect-coverflow';
 import type { Swiper as SwiperType } from 'swiper';
 import { ref } from "vue";
 
-const videoPlayer = ref<HTMLVideoElement | null>(null);
+//const videoPlayer = ref<HTMLVideoElement | null>(null);
 
 const onSwiper = (swiper: SwiperType) => {
   console.log(swiper);
