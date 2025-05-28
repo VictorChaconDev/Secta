@@ -6,23 +6,32 @@
   <div class="min-h-screen w-screen bg-black text-white p-10">
     <!-- Galería justificada tipo Flickr -->
     <div class="gallery">
-      <img src="/img/topSecret/behindTheScenes/BTS1.jpg" alt="BTS1" />
-      <img src="/img/topSecret/behindTheScenes/BTS2.jpg" alt="BTS2" />
-      <img src="/img/topSecret/behindTheScenes/BTS3.jpg" alt="BTS3" />
-      <img src="/img/topSecret/behindTheScenes/BTS4.jpg" alt="BTS4" />
-      <img src="/img/topSecret/behindTheScenes/BTS5.png" alt="BTS5" />
-      <img src="/img/topSecret/behindTheScenes/BTS6.png" alt="BTS6" />
-      <img src="/img/topSecret/behindTheScenes/BTS7.jpg" alt="BTS7" />
-      <img src="/img/topSecret/behindTheScenes/BTS9.jpg" alt="BTS9" />
-      <img src="/img/topSecret/behindTheScenes/BTS10.jpg" alt="BTS10" />
-      <img src="/img/topSecret/behindTheScenes/BTS11.png" alt="BTS11" />
-      <img src="/img/topSecret/behindTheScenes/BTS12.jpg" alt="BTS12" />
-      <img src="/img/topSecret/behindTheScenes/BTS13.png" alt="BTS13" />
-      <img src="/img/topSecret/behindTheScenes/BTS15.jpg" alt="BTS15" />
+     <div class="gallery">
+      <img v-for="video in videos" :key="video.id"
+      :src="video.url"
+      >
     </div>
-  </div>
+    </div>
+    </div>
 </template>
+<script setup lang="ts">
+const videos = [
+  { id: 1, url: "public/img/topSecret/behindTheScenes/BTS1.jpg" },
+  { id: 2, url: "public/img/topSecret/behindTheScenes/BTS2.jpg" },
+  { id: 3, url: "public/img/topSecret/behindTheScenes/BTS3.jpg" },
+  { id: 4, url: "public/img/topSecret/behindTheScenes/BTS4.jpg" },
+  { id: 5, url: "public/img/topSecret/behindTheScenes/BTS5.png" },
+  { id: 6, url: "public/img/topSecret/behindTheScenes/BTS6.png" },
+  { id: 7, url: "public/img/topSecret/behindTheScenes/BTS7.jpg" },
+  { id: 9, url: "public/img/topSecret/behindTheScenes/BTS9.jpg" },
+  { id: 10, url: "public/img/topSecret/behindTheScenes/BTS10.jpg" },
+  { id: 11, url: "public/img/topSecret/behindTheScenes/BTS11.png" },
+  { id: 12, url: "public/img/topSecret/behindTheScenes/BTS12.jpg" },
+  { id: 13, url: "public/img/topSecret/behindTheScenes/BTS13.png" },
+  { id: 15, url: "public/img/topSecret/behindTheScenes/BTS15.jpg" },
+];
 
+</script>
 <style scoped>
 .gallery {
   display: flex;
