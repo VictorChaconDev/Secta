@@ -57,7 +57,7 @@
             @click="pauseVideo"
             @contextmenu.prevent
           >
-            <source src="/my-project/src/assets/videos/cortoVideo.mp4" type="video/mp4">
+            <source src="../../assets/videos/cortoVideo.mp4" type="video/mp4">
             Tu navegador no soporta la reproducción de video.
 
       </video>
