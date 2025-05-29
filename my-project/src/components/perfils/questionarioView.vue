@@ -54,9 +54,9 @@
 
 
       <!-- Puntuación -->
-      <div class="mt-6 text-center text-sm text-zinc-400">
-        Puntuación actual: {{ form.Puntuacion }}
-      </div>
+<!--      <div class="mt-6 text-center text-sm text-zinc-400">-->
+<!--        Puntuación actual: {{ form.Puntuacion }}-->
+<!--      </div>-->
     </div>
   </div>
 </template>
