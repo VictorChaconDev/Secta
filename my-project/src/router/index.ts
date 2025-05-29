@@ -8,6 +8,7 @@ import LidersView from "../components/perfils/lidersView.vue";
 import InformacioView from "../components/topSecret/informacioView.vue"
 import CreditsView from "../components/topSecret/creditsView.vue";
 import BehindTheScenesView from "../components/topSecret/behindTheScenesView.vue";
+import QuestionarioView from "../components/perfils/questionarioView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -48,6 +49,10 @@ const router = createRouter({
     path: "/behind-the-scenes",
       name: "Behind The Scenes",
       component: BehindTheScenesView
+    },{
+    path: "/test",
+      name: "Test",
+      component: QuestionarioView
     }
   ],
 });
