@@ -57,7 +57,7 @@
             @click="pauseVideo"
             @contextmenu.prevent
           >
-            <source src="../../assets/videos/cortoVideo.mp4" type="video/mp4">
+            <source src="https://storage.cloud.google.com/video30m/vlog2.mp4" type="video/mp4">
             Tu navegador no soporta la reproducción de video.
 
       </video>
