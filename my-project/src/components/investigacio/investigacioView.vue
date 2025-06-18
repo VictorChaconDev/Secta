@@ -49,9 +49,18 @@
   </div>
 </div>
 <!--  PISTA 3-->
-  <div class="h-screen w-screen p-4 flex flex-col">
-<!--Video blog 1: Com capten a la gent?-->
-  </div>
+  <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/vlog1.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
+</div>
 <!--  PISTA 4-->
   <div class="h-screen w-screen p-4 flex flex-col">
     <div class="flex-1 flex justify-center items-center w-full gap-4">
@@ -66,17 +75,16 @@
 <!--  PISTA 5-->
 <!--  CAMARA OCULTA 1-->
 <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
-<!--  <video-->
-<!--    preload="auto"-->
-<!--    ref="videoPlayer"-->
-<!--    class="w-full h-full object-contain p-20"-->
-<!--    poster="/img/portadaCorto.png"-->
-<!--    controls-->
-<!--    @contextmenu.prevent-->
-<!--  >-->
-<!--    <source src="/videos/investigacio/camaraOculta1.mov" type="video/mp4" />-->
-<!--    Tu navegador no soporta la reproducción de video.-->
-<!--  </video>-->
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/reunio1.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
 </div>
 
 <!--  CAMARA OCULTA 2-->

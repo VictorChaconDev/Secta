@@ -171,7 +171,7 @@ const error = ref(false);
 const videoPlayer = ref<HTMLVideoElement | null>(null);
 
 const checkPassword = () => {
-  if (password.value === 'DES DEL CEL AL CENTRE DE LA TERRA' || password.value === 'des del cel al centre de la terra' || password.value === '') {
+  if (password.value === 'DES DEL CEL AL CENTRE DE LA TERRA' || password.value === 'des del cel al centre de la terra') {
     accessGranted.value = true;
 
     setTimeout(() =>{
