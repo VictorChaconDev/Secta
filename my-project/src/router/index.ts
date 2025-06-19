@@ -55,6 +55,9 @@ const router = createRouter({
       component: QuestionarioView
     }
   ],
+  scrollBehavior(){
+    return {top: 0}
+  }
 });
 
 router.afterEach((to) => {

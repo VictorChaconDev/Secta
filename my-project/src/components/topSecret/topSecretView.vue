@@ -57,7 +57,7 @@
             @click="pauseVideo"
             @contextmenu.prevent
           >
-            <source src="https://storage.cloud.google.com/video30m/vlog2.mp4" type="video/mp4">
+            <source src="/videos/trailerCurtDefinitiu.mp4" type="video/mp4">
             Tu navegador no soporta la reproducción de video.
 
       </video>
@@ -170,19 +170,26 @@ const error = ref(false);
 
 const videoPlayer = ref<HTMLVideoElement | null>(null);
 
+// Al cargar la página, comprobamos si ya se había concedido el acceso
+if (localStorage.getItem('accessGranted') === 'true') {
+  accessGranted.value = true;
+  showVideo.value = true;
+  timeOutTransition.value = true;
+}
+
 const checkPassword = () => {
-  if (password.value === 'DES DEL CEL AL CENTRE DE LA TERRA' || password.value === 'des del cel al centre de la terra') {
+  const pwd = password.value.trim().toLowerCase();
+  if (pwd === 'des del cel al centre de la terra') {
     accessGranted.value = true;
+    localStorage.setItem('accessGranted', 'true');
 
-    setTimeout(() =>{
-
+    setTimeout(() => {
       timeOutTransition.value = true;
 
       setTimeout(() => {
         showVideo.value = true;
       }, 1200);
     }, 2000);
-
   } else {
     error.value = true;
     password.value = '';

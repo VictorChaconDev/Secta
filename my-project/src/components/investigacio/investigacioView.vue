@@ -88,26 +88,43 @@
 </div>
 
 <!--  CAMARA OCULTA 2-->
-  <div class="h-screen w-screen p-4 flex flex-col">
-<!-- FALTA VIDEO CAMARA OCULTA-->
+  <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/reunio2.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
 </div>
 <!--  CAMARA OCULTA 3-->
-  <div class="h-screen w-screen p-4 flex flex-col">
-<!-- FALTA VIDEO CAMARA OCULTA-->
+  <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/reunio3.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
 </div>
   <!--  PISTA 6-->
 <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
-<!--  <video-->
-<!--    preload="auto"-->
-<!--    ref="videoPlayer"-->
-<!--    class="w-full h-full object-contain p-20"-->
-<!--    poster="/img/portadaCorto.png"-->
-<!--    controls-->
-<!--    @contextmenu.prevent-->
-<!--  >-->
-<!--    <source src="/videos/investigacio/vlog2.mp4" type="video/mp4" />-->
-<!--    Tu navegador no soporta la reproducción de video.-->
-<!--  </video>-->
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/vlog2.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
 </div>
   <!-- PISTA 7 -->
 <div class="h-screen w-screen p-4 flex flex-col overflow-auto">
@@ -140,17 +157,16 @@
 </div>
   <!--  PISTA 8-->
 <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
-<!--  <video-->
-<!--    preload="auto"-->
-<!--    ref="videoPlayer"-->
-<!--    class="w-full h-full object-contain p-20"-->
-<!--    poster="/img/portadaCorto.png"-->
-<!--    controls-->
-<!--    @contextmenu.prevent-->
-<!--  >-->
-<!--    <source src="/videos/investigacio/vlog3.mp4" type="video/mp4" />-->
-<!--    Tu navegador no soporta la reproducción de video.-->
-<!--  </video>-->
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/vlog3.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
 </div>
   <!-- PISTA 9 -->
 <div class="h-screen w-screen p-4 flex flex-col overflow-auto">
@@ -190,12 +206,30 @@
     </div>
   </div>
      <!--  PISTA 11-->
-<div class="h-screen w-screen p-4 flex flex-col">
-<!-- FALTA VLOG 4: LLIBRE GRAN DOCTOR-->
+<div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/vlog4.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
 </div>
      <!--  PISTA 12-->
-<div class="h-screen w-screen p-4 flex flex-col">
-<!-- FALTA VLOG 5: BIOGRAFIA JAUME MARTÍ-->
+<div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/biografiaJaume.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
 </div>
 <div class="h-screen w-screen p-4 flex flex-col overflow-auto items-center justify-center relative">
   <h1 style="font-family: 'Roboto Mono'" class="text-3xl text-blue-700 text-center font-bold absolute top-12">
@@ -208,20 +242,57 @@
          class="h-[65vh] w-auto max-w-full object-contain">
   </div>
 </div>
-<!--  FALTAN BLOGS-->
+<!--VLOG 6 LECTURA LLIBRE-->
+<div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/lectura.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
+</div>
+<!--  VLOG 7 REMORDIMENTS-->
+  <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/vlog4.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
+</div>
+<!--  VLOG 8 ENFRONTAMENT-->
+  <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/baralla.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
+</div>
 <!--  VLOG FINAL-->
   <div class="h-screen w-screen bg-black flex items-center justify-center p-4">
-<!--  <video-->
-<!--    preload="auto"-->
-<!--    ref="videoPlayer"-->
-<!--    class="w-full h-full object-contain p-20"-->
-<!--    poster="/img/portadaCorto.png"-->
-<!--    controls-->
-<!--    @contextmenu.prevent-->
-<!--  >-->
-<!--    <source src="/videos/investigacio/vlogFinal.mp4" type="video/mp4" />-->
-<!--    Tu navegador no soporta la reproducción de video.-->
-<!--  </video>-->
+  <video
+    preload="auto"
+    ref="videoPlayer"
+    class="w-full h-full object-contain p-20"
+    controls
+    @contextmenu.prevent
+  >
+    <source src="/videos/vlogFinal.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
 </div>
 </template>
 
