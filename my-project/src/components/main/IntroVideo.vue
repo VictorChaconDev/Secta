@@ -2,12 +2,13 @@
   <transition name="fade">
     <div
       v-if="visible"
-      class="fixed inset-0 bg-black z-50 flex items-center justify-center"
+      class="fixed inset-0 bg-black z-50 flex items-center justify-center p-4"
     >
       <!-- Video -->
       <video
         ref="introVideo"
         class="w-full h-full object-cover"
+        preload="auto"
         autoplay
         playsinline
         @ended="skip"
@@ -19,16 +20,16 @@
       <!-- Botón Pausar/Reanudar -->
       <button
         @click="togglePlay"
-        class="absolute top-5 left-5 sm:top-10 sm:left-10 bg-white text-black px-3 py-1 sm:px-4 sm:py-2 rounded-md sm:rounded-lg text-sm sm:text-base font-bold hover:bg-gray-300 transition"
+        class="absolute top-5 left-5 sm:top-10 sm:left-10 bg-black text-white px-3 py-1 sm:px-4 sm:py-2 rounded-md sm:rounded-lg text-sm sm:text-base font-bold hover:bg-gray-300 transition"
       >
-        {{ isPlaying ? 'Pausar' : 'Reanudar' }}
+        {{ isPlaying ? 'PAUSE' : 'PLAY' }}
       </button>
 
       <!-- Control de Volumen -->
       <div
-        class="absolute bottom-28 right-5 sm:bottom-24 sm:right-10 bg-white text-black px-3 py-1 sm:px-4 sm:py-2 rounded-md sm:rounded-lg flex items-center gap-2 text-sm sm:text-base"
+        class="absolute bottom-28 right-5 sm:bottom-24 sm:right-10 bg-black text-white px-3 py-1 sm:px-4 sm:py-2 rounded-md sm:rounded-lg flex items-center gap-2 text-sm sm:text-base"
       >
-        <label for="volume" class="whitespace-nowrap">Volumen</label>
+        <label for="volume" class="whitespace-nowrap">Volum</label>
         <input
           id="volume"
           type="range"
@@ -45,7 +46,7 @@
       <button
         v-if="showSkip"
         @click="skip"
-        class="absolute bottom-5 right-5 sm:bottom-10 sm:right-10 bg-white text-black px-3 py-1 sm:px-4 sm:py-2 rounded-md sm:rounded-lg text-sm sm:text-base font-bold hover:bg-gray-300 transition"
+        class="absolute bottom-5 right-5 sm:bottom-10 sm:right-10 bg-black text-white px-3 py-1 sm:px-4 sm:py-2 rounded-md sm:rounded-lg text-sm sm:text-base font-bold hover:bg-gray-300 transition"
       >
         Saltar
       </button>
