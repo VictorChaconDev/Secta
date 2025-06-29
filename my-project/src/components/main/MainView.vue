@@ -1,5 +1,8 @@
 <template>
-  <div class="text-white flex justify-center items-center text-4xl md:text-5xl lg:text-6xl font-now font-bold mt-11 mb-11 text-center px-4">
+  <div>
+    <IntroVideo v-if="showVideo" @finished="showVideo = false" />
+    <div v-else>
+      <div class="text-white flex justify-center items-center text-4xl md:text-5xl lg:text-6xl font-now font-bold mt-11 mb-11 text-center px-4">
     ECOS DE LA MORT
   </div>
 
@@ -60,4 +63,18 @@
       </router-link>
     </div>
   </div>
+    </div>
+  </div>
 </template>
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
+import IntroVideo from "./IntroVideo.vue";
+
+const showVideo = ref(true);
+
+onMounted(() => {
+  if (localStorage.getItem('introPlayed') === 'true') {
+    showVideo.value = false;
+  }
+});
+</script>
