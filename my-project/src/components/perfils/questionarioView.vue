@@ -51,6 +51,10 @@
       <div v-if="error" class="mt-4 text-center text-red-500 font-semibold">
         {{ error }}
       </div>
+      <!-- Mensaje de respuesta -->
+      <div v-if="resposta" class="mt-4 text-center text-white font-semibold">
+        {{ resposta }}
+      </div>
     </div>
   </div>
 </template>
@@ -60,6 +64,8 @@ import { ref } from 'vue'
 import { Questionario } from '../../models/Questionario'
 
 const error = ref<string | null>(null)
+const resposta = ref<string | null>(null)
+const puntos = ref(0);
 
 interface Opcion {
   valor: string
@@ -142,6 +148,7 @@ function enviar() {
   // Comprobar si hay campos vacíos
   if (!form.value.Edad.trim()) {
     error.value = 'Has d’introduir la teva edat.'
+    resposta.value = null;
     return
   }
 
@@ -151,11 +158,34 @@ function enviar() {
 
   if (sinResponder) {
     error.value = 'Has de respondre totes les preguntes.'
+    resposta.value = null;
     return
   }
 
   // Si todo está bien
   error.value = null
+  //Calculamos puntos totales
+  let total = 0;
+  preguntas.forEach((p) => {
+    const valorSeleccionado = form.value.preguntes[p.clave];
+    const opcion = p.opciones.find(o => o.valor === valorSeleccionado);
+    if(opcion) {
+      total += opcion.puntos;
+    }
+  });
+  puntos.value = total;
+
+  //Cremos el texto de respuesta segun los puntos que ha sacado el usuario
+  let text = '';
+  if(total <= 6){
+    text = `Has obtingut ${total} punts: Impenetrable. És molt dificil que algú et recluti, el teu escepticisme i autoconfiança et mantenen ferm/a.`;
+  } else if(total <= 14){
+    text = `Has obtingut ${total} punts: Curiós/a però cautelós/a. Estàs obert/a a explorar idees, però saps quan posar limits.`
+  } else {
+    text = `Has obtingut ${total} punts: Altament reclutable. Busques pertinença i respostes, cosa que et pot fer vulnerable a la manipulació.`
+  }
+  resposta.value = text;
+
   console.log('Formulario preparado para el backend:', form.value)
   // Aquí puedes hacer el POST cuando el backend esté listo
 }
