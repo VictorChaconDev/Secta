@@ -16,19 +16,19 @@
 </template>
 <script setup lang="ts">
 const videos = [
-  { id: 1, url: "public/img/topSecret/behindTheScenes/BTS1.jpg" },
-  { id: 2, url: "public/img/topSecret/behindTheScenes/BTS2.jpg" },
-  { id: 3, url: "public/img/topSecret/behindTheScenes/BTS3.jpg" },
-  { id: 4, url: "public/img/topSecret/behindTheScenes/BTS4.jpg" },
-  { id: 5, url: "public/img/topSecret/behindTheScenes/BTS5.png" },
-  { id: 6, url: "public/img/topSecret/behindTheScenes/BTS6.png" },
-  { id: 7, url: "public/img/topSecret/behindTheScenes/BTS7.jpg" },
-  { id: 9, url: "public/img/topSecret/behindTheScenes/BTS9.jpg" },
-  { id: 10, url: "public/img/topSecret/behindTheScenes/BTS10.jpg" },
-  { id: 11, url: "public/img/topSecret/behindTheScenes/BTS11.png" },
-  { id: 12, url: "public/img/topSecret/behindTheScenes/BTS12.jpg" },
-  { id: 13, url: "public/img/topSecret/behindTheScenes/BTS13.png" },
-  { id: 15, url: "public/img/topSecret/behindTheScenes/BTS15.jpg" },
+  { id: 1, url: "/img/topSecret/behindTheScenes/BTS1.jpg" },
+  { id: 2, url: "/img/topSecret/behindTheScenes/BTS2.jpg" },
+  { id: 3, url: "/img/topSecret/behindTheScenes/BTS3.jpg" },
+  { id: 4, url: "/img/topSecret/behindTheScenes/BTS4.jpg" },
+  { id: 5, url: "/img/topSecret/behindTheScenes/BTS5.png" },
+  { id: 6, url: "/img/topSecret/behindTheScenes/BTS6.png" },
+  { id: 7, url: "/img/topSecret/behindTheScenes/BTS7.jpg" },
+  { id: 9, url: "/img/topSecret/behindTheScenes/BTS9.jpg" },
+  { id: 10, url: "/img/topSecret/behindTheScenes/BTS10.jpg" },
+  { id: 11, url: "/img/topSecret/behindTheScenes/BTS11.png" },
+  { id: 12, url: "/img/topSecret/behindTheScenes/BTS12.jpg" },
+  { id: 13, url: "/img/topSecret/behindTheScenes/BTS13.png" },
+  { id: 15, url: "/img/topSecret/behindTheScenes/BTS15.jpg" },
 ];
 
 </script>

@@ -54,19 +54,23 @@
   </transition>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted } from 'vue';
 
-const emit = defineEmits(['finished']);
+const emit = defineEmits<{
+  (e: 'finished'): void;
+}>();
 
-const visible = ref(true);
-const introVideo = ref(null);
-const showSkip = ref(false);
-const isPlaying = ref(true);
-const volume = ref(1.0); // volumen por defecto
+const visible = ref<boolean>(true);
+const showSkip = ref<boolean>(false);
+const isPlaying = ref<boolean>(true);
+const volume = ref<number>(1.0);
+
+// Referencia al video
+const introVideo = ref<HTMLVideoElement | null>(null);
 
 // Saltar video
-const skip = () => {
+const skip = (): void => {
   introVideo.value?.pause();
   localStorage.setItem('introPlayed', 'true');
   visible.value = false;
@@ -74,7 +78,7 @@ const skip = () => {
 };
 
 // Pausar o reproducir
-const togglePlay = () => {
+const togglePlay = (): void => {
   if (!introVideo.value) return;
   if (introVideo.value.paused) {
     introVideo.value.play();
@@ -86,7 +90,7 @@ const togglePlay = () => {
 };
 
 // Cambiar volumen
-const changeVolume = () => {
+const changeVolume = (): void => {
   if (introVideo.value) {
     introVideo.value.volume = volume.value;
   }
@@ -99,7 +103,7 @@ onMounted(() => {
   }, 5000);
 
   // Intentar reproducir con sonido
-  const playPromise = introVideo.value.play();
+  const playPromise = introVideo.value?.play();
   if (playPromise !== undefined) {
     playPromise
       .then(() => {
@@ -112,9 +116,12 @@ onMounted(() => {
   }
 
   // Inicializar volumen
-  introVideo.value.volume = volume.value;
+  if (introVideo.value) {
+    introVideo.value.volume = volume.value;
+  }
 });
 </script>
+
 
 <style scoped>
 /* Transición de fundido */

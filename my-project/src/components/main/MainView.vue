@@ -69,7 +69,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import IntroVideo from "./IntroVideo.vue";
-
 const showVideo = ref(true);
 
 onMounted(() => {
